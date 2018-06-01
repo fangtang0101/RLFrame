@@ -1,0 +1,29 @@
+{
+  "name": "rlframe",
+  "version": "1.0.0",
+  "description": "a project of vue ()\u001b[D\u001bframe ()\u001b[DMutiple page)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangtang0101/RLFrame.git"
+  },
+  "keywords": [
+    "vue",
+    "js",
+    "frame",
+    "MutiplePage"
+  ],
+  "author": "fang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fangtang0101/RLFrame/issues"
+  },
+  "homepage": "https://github.com/fangtang0101/RLFrame#readme",
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  }
+}
