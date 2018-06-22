@@ -9,4 +9,4 @@
 
 ### target step
 ###### step one only vue running   						==> ok
-###### step two use webpack pack Vue to js			    
+###### step two use webpack pack Vue to js			    ing...    
