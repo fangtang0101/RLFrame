@@ -8,4 +8,5 @@
 
 
 ### target step
-###### step only vue running
+###### step one only vue running   						==> ok
+###### step two use webpack pack Vue to js			    
