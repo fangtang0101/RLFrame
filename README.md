@@ -8,5 +8,6 @@
 
 
 ### target step
-###### step one only vue running   						==> ok
-###### step two use webpack pack Vue to js			    ing...    
+###### step one only vue running   							==> ok
+###### step two use webpack pack Vue to js			    	==> ok
+###### step three packgae vue to Multiple page by webpack	==> ing
