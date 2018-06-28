@@ -1,8 +1,12 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
-    entry: './main.js',
+    entry: {
+        build1:'./main1.js',
+        build2:'./main2.js',
+    },
     output: {
-        filename: 'build.js'
+        filename: '[name].js',
+        path: __dirname + '/dist'
     },
     // whem you use vue-loader ,then you must set the plugins .
     // link :https://stackoverflow.com/questions/42541315/best-approach-when-replacing-jquery-with-vuejs-2-in-multi-page-existing-net-mvc/50101059#50101059
