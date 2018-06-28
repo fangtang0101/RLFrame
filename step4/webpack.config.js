@@ -1,8 +1,9 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+var Webpack = require('webpack')
 module.exports = {
     entry: {
-        build1:'./main1.js',
-        build2:'./main2.js',
+        build1: './main1.js',
+        build2: './main2.js',
     },
     output: {
         filename: '[name].js',
@@ -11,7 +12,11 @@ module.exports = {
     // whem you use vue-loader ,then you must set the plugins .
     // link :https://stackoverflow.com/questions/42541315/best-approach-when-replacing-jquery-with-vuejs-2-in-multi-page-existing-net-mvc/50101059#50101059
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new Webpack.optimize.CommonsChunkPlugin({
+            name: 'common',
+            minChunks: 2
+        })
     ],
     // must : if not set alias of vue ,then throw error
     // error : [Vue warn]: You are using the runtime-only build of Vue where the template compiler is not available. Either pre-compile the templates into render functions, or use the compiler-included build.
@@ -42,3 +47,5 @@ module.exports = {
         ]
     }
 };
+
+// link :  https://blog.csdn.net/TyrionJ/article/details/79269559
